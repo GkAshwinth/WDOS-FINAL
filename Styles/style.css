@@ -402,6 +402,24 @@ footer a:hover{
 
     }
 
+
+    @media (max-width: 768px) {
+        .hero {
+            height: 50vh; 
+            font-size: 30px; 
+            margin: 0px 5px 15px 0px;
+        }
+    
+        .hero h1 {
+            font-size: 24px; 
+        }
+    
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
     main section h1{ font-weight: 800;
         font-size: 23px;
         padding: 16px;
@@ -610,13 +628,60 @@ footer a:hover{
     }
 }
 
+.about_table_container{
+    width: 100%;
+    height: auto; /* Adjust height for mobile */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.about_table{
+    width: 100%; /* Use full width on mobile */
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left; 
+    overflow-x: auto; /* Add horizontal scroll for smaller screens */
+
+    th, td {
+        padding: 12px; /* Adjust padding for mobile */
+        border: 1px solid rgb(108, 104, 104);
+    }
+    th {
+        background-color: rgb(251, 236, 255);
+        color: #333;
+    }
+    thead th {
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .spanned_row {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .about_table_container {
+        height: auto;
+        flex-direction: column; 
+        padding: 10px;
+    }
+
+    .about_table {
+        width: 100%; 
+        font-size: 14px; 
+        overflow-x: auto; 
+    }
+
+    .about_table th, .about_table td {
+        padding: 10px; 
+    }
+}
    
-
-
-
-
-/*Upcoming Games Page*/
-
 
 
 
