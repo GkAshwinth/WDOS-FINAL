@@ -56,16 +56,16 @@ header nav label{
 /* Dropdown menu */
 .list_container {
     text-decoration: none;
-    position: absolute; /* Position relative to parent container */
-    top: 100%; /* Position below the header */
+    position: absolute; 
+    top: 100%; 
     left: 0;
-    width: 100%; /* Full width of the header */
+    width: 100%;
     display: flex;
     flex-direction: column; /* Stack items vertically */
     gap: 5px;
-    height: 0; /* Collapsed by default */
+    height: 0; 
     overflow: hidden; /* Prevent overflow */
-    transition: 0.3s ease; /* Smooth transition for height */
+    transition: 0.3s ease; 
     background-color: var(--primary-color);
     z-index: 1000; /* Ensure it's above other elements */
    
