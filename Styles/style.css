@@ -40,9 +40,9 @@ header nav label{
 
 /* Container for the header */
 .container {
-    position: relative; /* Position context for dropdown */
+    position: relative; 
     display: flex;
-    align-items: center; /* Vertically align items */
+    align-items: center; 
     justify-content: space-between; /* Space between logo and hamburger */
     width: 100vw;
     height: 100px;
@@ -131,13 +131,6 @@ header nav label{
         color: var(--text-color);
     }
 
-/* Unknown class used before finalization */
-
-/* Unknown class end */
-
-/* HEADER SECTION  END*/
-
-
 
 /* MEADIA QUERIES */
 @media (min-width: 768px){
@@ -146,10 +139,7 @@ header nav label{
 
         margin-top: 140px;
     }
-    /* HEADER start */
 
-
-    
 
     header a {
         text-decoration: none;
@@ -174,7 +164,6 @@ header nav label{
        
     }
 
-    
     .list_container {
         display: flex;
         flex-direction: row;
@@ -185,7 +174,6 @@ header nav label{
         background-color: transparent;
         
     }
-
 
         .logo{
             height: 100px;
@@ -214,89 +202,13 @@ header nav label{
         display: none;
     }
 
-
     .hero{ display: none;}
 
-main 
-/* Container for each section */
-.home_content {
-    display: flex; /* Flexbox for side-by-side layout */
-    align-items: center; /* Align image and text vertically */
-    justify-content: flex-start; /* Align elements to the left */
-    gap: 20px; /* Add space between the image and text */
-    padding: 20px;
-    border: 1px solid #444; /* Optional: Add border for clarity */
-    border-radius: 8px; /* Rounded corners for a polished look */
-    margin-bottom: 30px; /* Space between sections */
-  }
-  
-  /* Styling for the image container */
-  .first_image, .second_image, .third_image {
-   
-    max-width: 40%; /* Limit image container to 40% width */
-  }
-  
-  .first_image img, .second_image img, .third_image img {
-    width: 100%; /* Image fits fully within the container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow */
-  }
-  
-  /* Styling for the text container */
-  .sub_content_2 {
-    flex: 2; /* Text takes 2 parts of available space */
-    display: flex;
-    flex-direction: column; /* Ensure text stays stacked vertically */
-    justify-content: center; /* Center-align text vertically relative to the image */
-  }
-  
-  .sub_content_2 h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .sub_content_2 p {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center; /* Align text properly to the left */
-    margin: 0; /* Remove unnecessary margins */
-  }
+/* HEADER SECTION  END*/
 
 
- main section {
-    margin-left: 40px;
- 
+/*FOOTER SECTION START*/
 
-
-
- }
-
-  section .Colombo,.Kandy{ display: flex;
-    flex-direction:row;
-    align-items: center;
-    width: 100%;
-    height: 30vh;
-     align-items: center;
-     gap: 20px;
-     justify-content: center;
-
-    
-
-
-        }
-
-   section  .Colombo img,.Kandy img{    width: 250px;
-    height: auto;
-    display: block;
-    ;
-
-
-      }}
-    /* HEADER end */
-    /* HEADER end */
-    /* HEADER end */
 
     /* FOOTER SECTION START*/
 
@@ -364,11 +276,67 @@ footer a:hover{
 .footer div{
     margin-right: 50px;
 }
-    
 
-    /* Hero Section*/
+/*FOOTER SECTION END*/
 
-    .hero{
+
+/*  ------------------HOME PAGE----------------------*/
+
+
+main 
+/* Container for each section */
+.home_content {
+    display: flex; /* Flexbox for side-by-side layout */
+    align-items: center; /* Align image and text vertically */
+    justify-content: flex-start; /* Align elements to the left */
+    gap: 20px; /* Add space between the image and text */
+    padding: 20px;
+    border: 1px solid #444; /* Optional: Add border for clarity */
+    border-radius: 8px; /* Rounded corners for a polished look */
+    margin-bottom: 30px; /* Space between sections */
+  }
+  
+  /* Styling for the image container */
+  .first_image, .second_image, .third_image {
+   
+    max-width: 40%; /* Limit image container to 40% width */
+  }
+  
+  .first_image img, .second_image img, .third_image img {
+    width: 100%; /* Image fits fully within the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow */
+  }
+  
+  /* Styling for the text container */
+  .sub_content_2 {
+    flex: 2; /* Text takes 2 parts of available space */
+    display: flex;
+    flex-direction: column; /* Ensure text stays stacked vertically */
+    justify-content: center; /* Center-align text vertically relative to the image */
+  }
+  
+  .sub_content_2 h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .sub_content_2 p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center; /* Align text properly to the left */
+    margin: 0; /* Remove unnecessary margins */
+  }
+
+
+ main section {
+    margin-left: 40px;
+
+     /* Hero Section*/
+
+     .hero{
         width: 100%;
         background-image: url("../Images/poster.jpg");
         height:90vh;
@@ -440,8 +408,6 @@ footer a:hover{
         .Home h1{ padding-left: 30px;
 
 
-
-
         }
         main section p{
             font-size: 17px;
@@ -450,8 +416,7 @@ footer a:hover{
            
         }
       
-    
-    
+
         
         .home_content{
             display: flex;
@@ -466,7 +431,7 @@ footer a:hover{
             align-items: center;
             
         }
-       
+    
 
           .first_image,
           .second_image,
@@ -478,8 +443,6 @@ footer a:hover{
             justify-content: center;
             margin: 0px;
 
-
-
           }
           .first_image img,
           .second_image img,
@@ -489,12 +452,10 @@ footer a:hover{
         
         }
             
-
       
         .unordered h1 {  font-size: larger;
             color:     #6265ba;
             
-
 
         }
 
@@ -502,13 +463,36 @@ footer a:hover{
             color:    #6b6ed0;
 
 
+        }
+ 
+
+  /* -------------------ABOUT US PAGE------------------------  */
+
+ }
+
+  section .Colombo,.Kandy{ display: flex;
+    flex-direction:row;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+     align-items: center;
+     gap: 20px;
+     justify-content: center;
+
+    
 
 
         }
-        
 
-        
-/*About Us Page*/
+   section  .Colombo img,.Kandy img{    width: 250px;
+    height: auto;
+    display: block;
+    ;
+
+
+      }}
+
+
 
 .Colombo, .Kandy{ display: flex;
     flex-direction:row;
@@ -518,8 +502,6 @@ footer a:hover{
      align-items: center;
      gap: 20px;
      justify-content: center;
-
-    
 
 
         }
@@ -549,7 +531,6 @@ footer a:hover{
 
 
 
-
 .about_us li{   font-weight: 400;
  
 }
@@ -563,14 +544,14 @@ footer a:hover{
 .col_map{
     display: flex;
     justify-content: center; /* Center the map horizontally */
-    align-items: center; /* Align content vertically if needed */
-    padding: 10px; /* Optional: Add some spacing*/
+    align-items: center; 
+    padding: 10px; 
 }
 
 .map-iframe {
-    width: 100%; /* Make it responsive */
-    max-width: 400px; /* Set a maximum width */
-    height: 350px; /* Adjust height proportionally */
+    width: 100%; 
+    max-width: 400px; 
+    height: 350px; 
 }
 
 /* About page Table styling */
@@ -609,70 +590,14 @@ footer a:hover{
     }
 }
 
-   
+
+
+/*------------Consoles And Gaming Peripherals Page-----------------*/
 
 
 
-
-/*Upcoming Games Page*/
-
-
-/* Container for images */
-main section .Upcom_Games_container {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(96, 123, 56);
-    align-items: center;
-    margin: 40px;
-    height: auto;
-    filter: drop-shadow(0 0 5px rgb(138, 57, 57));
-    justify-content: space-evenly;
-    border-radius: 40px;
- 
-    
-  }
-    /* Upcoming Games inside Condatiner   */
-   .Upcoming_Games {
-    background-color: #ddd432;
-    width: 100%;
-    margin: 10px;
-
-
-
-  }
-
-    .Upcoming_Games img{    height: 100%;
-        width: 100%;
-        border-radius: 50px;
-        margin-bottom: 10px;
-        filter:drop-shadow(0 0 5px grey) ;
-        transition: transform 0.4s ease;
-
-    }
-
-    p{
-
-        color: #000000;
-    }
-
-
-
-/* Effects for services */
-.Upcoming_games:hover{
-    p{
-        opacity: 1;
-    }
-    img{
-        transform: scale(1.07);
-        filter:drop-shadow(0 0 4px grey) grayscale(0)
-    }
-}
-
-
-
-
-/* Container for doctor images */
-.doctor_container{
+/* Container for Peripherals images */
+.item_container{
     display: grid;
     grid-template-columns: repeat(4, 300px);
     grid-template-rows: repeat(2,300px);
@@ -686,16 +611,16 @@ main section .Upcom_Games_container {
     overflow: auto;
 }
 
-/* Styling for each doctor Image and name */
-.doctor {
-    position: relative; /* Make the doctor container a positioning context */
+/* Styling for each Peripherals Image and name */
+.peripherals {
+    position: relative; /* Make the Peripherals container a positioning context */
     text-align: center;
     font-weight: bolder;
     font-size: 18px;
     transition: transform 0.7s ease;
   }
   
-  .doctor img {
+  .peripherals img {
     width: 200px;
     height: 200px;
     margin-bottom: 10px;
@@ -707,117 +632,154 @@ main section .Upcom_Games_container {
   /* Styling for the price overlay */
   .price-overlay {
     position: absolute;
-    top: 50%; /* Center the price vertically */
-    left: 50%; /* Center the price horizontally */
-    transform: translate(-50%, -50%); /* Adjust position to truly center */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    color: white;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 10px 15px;
     border-radius: 8px;
     font-size: 16px;
     font-weight: bold;
     opacity: 0; /* Hidden by default */
     transition: opacity 0.3s ease;
-    pointer-events: none; /* Prevent interfering with hover */
+    pointer-events: none; 
   }
   
-  .doctor p {
+  .peripherals p {
     color: white;
     transition: transform 0.7s ease;
     text-shadow: 0 0 1px black;
     text-decoration: none;
   }
   
-  /* Hover effect for doctors */
-  .doctor:hover img {
+  /* Hover effect for Peripherals */
+  .peripherals:hover img {
     transform: scale(1.1); /* Enlarge the image */
     border-radius: 20px; /* Change from circular to rounded rectangle */
   }
   
-  .doctor:hover .price-overlay {
+  .peripherals:hover .price-overlay {
     opacity: 1; /* Make the price visible on hover */
   }
   
-  .doctor:hover p {
+  .peripheralsr:hover p {
     transform: scale(1.1); /* Slightly enlarge the text */
   }
 
 
 
+/*-------Upcoming Games Container---------- */
 
-/* Introduction styling */
-.services_info{
+.up_games_container{
+    margin: 10px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: justify;
-
-    img{
-        height: 350px;
-        width: 350px;
-        margin-left: 25px;
-        border-radius: 40px;
-        filter: drop-shadow(0 0 3px grey);
-    }
-}
-
-/* Container for images */
-.service_container{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: var(--accent-color);
-    margin: 40px;
     flex-wrap: wrap;
-    height: 300px;
-    border-radius: 50px;
-    filter: drop-shadow(0 0 4px grey);
-    z-index: 10;
+    gap:20px;
+    justify-content: space-around;
+    
 }
 
-/* Services inside container */
-.service{
+.up_game{
+    margin: 3px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    align-items:flex-start;
+    gap: 20px;
+    max-width: 700px;
     padding: 20px;
-    font-weight: bolder;
-
-    img{
-        height: 250px;
-        width: 300px;
-        border-radius: 50px;
-        margin-bottom: 10px;
-      ;
-        transition: transform 0.4s ease;
-    }
-
-    p{
-        opacity: 0;
-        display: block;
-        transition: opacity 0.8s ease;
-        font-size: 22px;
-    }
+    border-radius: 8px;
+    flex: 1 1 500px;
+    background-color: #3f4185;
+    box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.4s ease, transform 0.5s ease;
 }
 
-/* Effects for services */
-.service:hover{
-    p{
-        opacity: 1;
-    }
-    img{
-        transform: scale(1.07);
-        filter:drop-shadow(0 0 4px grey) grayscale(0)
-    }
+.release{
+    list-style: none;
+    opacity: 0;
+    font-family: 'Nexa' , sans-serif;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.5s ease;
 }
 
-@media (min-width: 768px){ .service img {
-
-    width: 450px;
-    height: 280px;
+.devices{
+    margin-top: 3%;
+    list-style: none;
+    visibility: visible;
+    opacity: 1;
+    font-family: 'Nexa' , sans-serif;
 }
 
+.up_game:hover .devices{
+    font-family: 'Nexa' , sans-serif;
+    
+}
+
+.up_game:hover{
+    transform: scale(1.02);
+}
+
+.up_game:hover .release{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;    
+}
+
+.up_game_thumb{
+    display: block;
+    margin: auto;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 200px;
+    width: 200px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.upcoming_game_con{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.up_game h3{
+    color: aliceblue;
+    font-family: 'Nexa', sans-serif;
+    margin-top: 0;
+
+}
+
+.up_game p{
+    font-family: 'Nexa', sans-serif;
+    color: aliceblue;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .up_game {
+        flex-direction: column; 
+        flex: 1 1 100%; 
+        max-width: 95%; 
+    }
+
+    .up_game_thumb {
+        height: 180px; 
+    }
+
+    .up_game h3 {
+        text-align: center;
+        font-size: 20px; 
+    }
+
+    .up_game p {
+        text-align: center;
+        font-size: 14px; 
+    }
             
 
 
@@ -825,7 +787,7 @@ main section .Upcom_Games_container {
 }
 
 
-/*GAMES PAGE*/
+/*  ------------GAMES PAGE-----------------  */
 
 /* Container for Game Info */
 .game-info-container {
@@ -931,7 +893,14 @@ main section .Upcom_Games_container {
     margin-bottom: 30px;
   }
   
-  /* FAQ Section */
+
+
+
+
+
+  /*   -----------------Support Page---------------  */
+
+  
   .faq-section {
     max-width: 800px;
     margin: auto;
