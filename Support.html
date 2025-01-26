@@ -39,7 +39,7 @@
         <nav class="container">
 
             <!-- Below tags are for when the website enters mobile/tablet views where a Hamburger Menu will be deployed. By default hidden -->
-            <img src="Favicon\Logo.webp" alt="Logo for GK Vanguard" class="logo hamburger">
+            <img src="./Favicon/apple-icon-152x152.png" alt="Logo for GK Vanguard" class="logo hamburger">
             <h1 class="hamburger">GK Vanguard</h1>              
 
                 <!-- Use of checkbox to initiate hamburger menu, Label has been acquired through google -->
@@ -49,7 +49,7 @@
             <!-- Below content in a div section are for when the website is in Desktop view and is hidden inside a menu when in mobile/tablet view -->
             <div class="list_container">
                 <a href="index.html" target="_self" id="ham_logo">
-                    <img src="/Images/gkvang.webp" alt="Logo for GK Vanguard" class="logo">
+                    <img src="./Favicon/apple-icon-152x152.png" alt="Logo for GK Vanguard" class="logo">
             </a>
 
                 <a href="index.html" target="_self" id="Home_link">Home Page</a>
@@ -66,83 +66,78 @@
 <!-- HEADER SECTION END-->
 
 <main>
-    <section class="faq-section">
-      <h2>FAQs</h2>
-
-      <div class="faq-item">
-        <button class="faq-question">What is GK Vanguard?</button>
-        <div class="faq-answer">
-          <p>GK Vanguard is your go-to platform for all things gaming, offering the latest news, game recommendations, and gaming peripherals.</p>
+    <div class="freq_asked_qs_con">
+        <h3>FREQUENTLY ASKED QUESTIONS</h3>
+        <div class="freq_asked">
+            <h4>Can I pre-order upcoming games?</h4>
+            <p>Absolutely! You can pre-order upcoming games directly on
+               our website or in-store. Pre-ordering ensures you get
+               access to exclusive content, early releases, or
+               limited-edition items.</p>
+        </div>
+    
+        <div class="freq_asked">
+            <h4>Which platforms does the GK Vanguard Store support?</h4>
+            <p>The GK Vanguard Store is currently available worldwide on PC, Mac, and Android. It is also available on iPhone and iPad in the European Union only. You can check platform compatibility for individual products by referring to the "Specifications" section of any product page.</p>
+        </div>
+    
+        <div class="freq_asked">
+            <h4>Can I cancel or modify my order?</h4>
+            <p>Orders can be canceled or modified before they are shipped. For digital purchases,
+                 cancellations are allowed only before the code has been sent. Please contact our support team for assistance.</p>
+        </div>
+    
+        <div class="freq_asked">
+            <h4>How can I manage my child’s access to content across platforms??</h4>
+            <p>First and foremost we recommend enabling parental controls at the device level as well as GK Vanguard’s account-level controls. For details on how to navigate Epic's parental controls,  please head here..</p>
         </div>
       </div>
-
-      <div class="faq-item">
-        <button class="faq-question">What platforms do you cover?</button>
-        <div class="faq-answer">
-          <p>We cover PlayStation, Xbox, PC, and Nintendo Switch, ensuring you stay updated no matter your preferred platform.</p>
-        </div>
+    
+    
+    
+      <!--------------------------- FORM <--------------------------->  
+    
+      <div class="main_form_con">
+        <div class="form_con">
+            <div class="title">
+                <form action="https://api.web3forms.com/submit" class="form" method="post">
+                    <input type="hidden" name="access_key" value="8c5d7fd7-df6b-4267-a2cc-2596853ca067">
+                    <h3>HIT US!!!!!!</h3>
+                    <input type="text" name="name" placeholder="Your name" class="contact_deets" required pattern="[A-Za-z]+" title="Only Letters and Spaces allowed. Try Again">
+                    <input type="email" name="email" placeholder="Your E-mail" class="contact_deets" required>
+                    <input type="tel" name="num" placeholder="Your Contact Number" class="contact_deets" required pattern="/d{10}">
+                    <textarea name="question" class="contact_deets" placeholder="Your Question"></textarea>
+                    <button type="submit">SUBMIT</button>
+                </form>
+            </div>
+       </div>
       </div>
+    
+      
 
-      <div class="faq-item">
-        <button class="faq-question">How can I contact support?</button>
-        <div class="faq-answer">
-          <p>You can reach out to our support team via email at <a href="mailto:support@gkvanguard.com">support@gkvanguard.com</a>.</p>
+
+      <footer class="footer">
+
+        <!-- Copyright section -->
+        <div class="Copyright" id="copy1">
+            <p>© 2024 GK Vanguard| Privacy Policy | Terms of Service</p>
         </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">Do you sell gaming gear?</button>
-        <div class="faq-answer">
-          <p>Yes, we offer a curated selection of gaming peripherals, including keyboards, mice, and headphones.</p>
+    
+        <!-- Address -->
+        <div id="item2">
+            <p>45/9 Galle Road,Colombo-06</p>
+            <p>011-2345678</p>
         </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">Are there reviews and recommendations on GK Vanguard?</button>
-        <div class="faq-answer">
-          <p>Absolutely! Our team provides in-depth reviews and recommendations to help you choose the best games and gear.</p>
+    
+        <!-- Social Links -->
+        <div class="footer_links" id="item3">
+            <div> <img src="./Images/LinkedInLogo.png" alt="Logo For LinkedIn" class="footer_logo"> <a href="https://www.linkedin.com" target="_blank">   LinkedIn    </a>   </div>
+            <div> <img src="./Images/FacebookLogo.png" alt="Logo For Facebook" class="footer_logo"> <a href="https://www.facebook.com" target="_blank">  Facebook    </a>    </div>
+            <div> <img src="./Images/InstagramLogo.png" alt="Logo For Instagram" class="footer_logo"> <a href="https://www.instagram.com" target="_blank"> Instagram   </a>  </div>
+            <div> <img src="./Images/YouTubeLogo.png" alt="Logo For YouYube" class="footer_logo"> <a href="https://www.youtube.com" target="_blank">    YouTube     </a>     </div>
         </div>
-      </div>
-    </section>
-
-
-
-    <section class="search-container">
-        <form action="/search" method="GET" class="search-form">
-          <input
-            type="text"
-            name="query"
-            placeholder="Search for games, articles, or gear..."
-            class="search-input"
-          />
-          <button type="submit" class="search-button">Search</button>
-        </form>
-      </section>
-  </main>
-
-
-  <footer class="footer">
-
-    <!-- Copyright section -->
-    <div class="Copyright" id="copy1">
-        <p>© 2024 GK Vanguard| Privacy Policy | Terms of Service</p>
-    </div>
-
-    <!-- Address -->
-    <div id="item2">
-        <p>45/9 Galle Road,Colombo-06</p>
-        <p>011-2345678</p>
-    </div>
-
-    <!-- Social Links -->
-    <div class="footer_links" id="item3">
-        <div> <img src="/Favicon/LinkedInLogo.png" alt="Logo For LinkedIn" class="footer_logo"> <a href="https://www.linkedin.com" target="_blank">   LinkedIn    </a>   </div>
-        <div> <img src="/Favicon/FacebookLogo.png" alt="Logo For Facebook" class="footer_logo"> <a href="https://www.facebook.com" target="_blank">  Facebook    </a>    </div>
-        <div> <img src="/Favicon/InstagramLogo.png" alt="Logo For Instagram" class="footer_logo"> <a href="https://www.instagram.com" target="_blank"> Instagram   </a>  </div>
-        <div> <img src="/Favicon/YouTubeLogo.png" alt="Logo For YouYube" class="footer_logo"> <a href="https://www.youtube.com" target="_blank">    YouTube     </a>     </div>
-    </div>
-
-
-
-
-</footer>
+    
+    
+    
+    
+    </footer>
