@@ -623,7 +623,7 @@ footer a:hover{
 
 
 
-/* Container for doctor images */
+/* Container for peripherals images */
 .item_container{
     display: grid;
     grid-template-columns: repeat(4, 300px);
@@ -638,9 +638,9 @@ footer a:hover{
     overflow: auto;
 }
 
-/* Styling for each doctor Image and name */
+/* Styling for each peripherals Image and name */
 .peripherals {
-    position: relative; /* Make the doctor container a positioning context */
+    position: relative; /* Make the peripherals container a positioning context */
     text-align: center;
     font-weight: bolder;
     font-size: 18px;
@@ -659,10 +659,10 @@ footer a:hover{
   /* Styling for the price overlay */
   .price-overlay {
     position: absolute;
-    top: 50%; /* Center the price vertically */
-    left: 50%; /* Center the price horizontally */
-    transform: translate(-50%, -50%); /* Adjust position to truly center */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: rgba(0, 0, 0, 0.7); 
     color: white;
     padding: 10px 15px;
     border-radius: 8px;
@@ -670,7 +670,7 @@ footer a:hover{
     font-weight: bold;
     opacity: 0; /* Hidden by default */
     transition: opacity 0.3s ease;
-    pointer-events: none; /* Prevent interfering with hover */
+    pointer-events: none; 
   }
   
   .peripherals p{
@@ -697,7 +697,32 @@ footer a:hover{
   }
 
 
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .item_container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+      margin: 10px 20px;
+      padding: 10px 0;
+    }
+  
+    .peripherals img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .price-overlay {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+  }
+
+
+
+
   /*Consoles and Gaming Peripherals End*/
+
+
 
 .up_games_container{
     margin: 10px;
@@ -915,6 +940,48 @@ footer a:hover{
     text-align: center;
     color: #0cd498;
     margin-bottom: 30px;
+  }
+  
+
+
+ /* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .game-info-container {
+      padding: 15px;
+      flex-direction: column;
+    }
+  
+    .game-title {
+      font-size: 28px;
+    }
+  
+    .image-container img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .description {
+      opacity: 1; /* Makes description visible by default */
+      position: static; /* Normal flow positioning */
+      background-color: #272428; /* Match game details background */
+      margin-top: 10px;
+    }
+  
+    .game-details {
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  }
+  
+  /* Desktop Hover Effect */
+  @media (min-width: 769px) {
+    .image-container:hover .description {
+      opacity: 1; /* Makes description visible on hover */
+    }
   }
   
   /* ------------FAQ Section------------- */
