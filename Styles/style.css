@@ -68,82 +68,71 @@ header nav label{
     transition: 0.3s ease; 
     background-color: var(--primary-color);
     z-index: 1000; /* Ensure it's above other elements */
-   
 }
 
-
 /* Clickable logo which leads to home page (Only desktop view) */
-.logo{
+.logo {
     height: 100px;
     width: 100px;
-
 }
 
 /* Hamburger menu which is hidden in desktop view */
-.hamburger{
+.hamburger {
     display: flex;
-        align-items: center;
+    align-items: center;
 }
 
-#check{
+#check {
     display: none;
 }
 
-#Home_link{
+#Home_link {
     display: block;
 }
+
 /* Hamburger menu end */
 
 /* id for logo which is linked to home page (Desktop view only) */
+#ham_logo {
+    display: none;
+}
 
-#ham_logo{
-    display: none;}
+#check:checked ~ .list_container {
+    height: auto; /* Expand dropdown */
+    padding: 10px;
+}
 
-    #check:checked ~ .list_container {
-        height: auto; /* Expand dropdown */
-        padding: 10px;
-    }
-    
-    #check:checked ~ .list_container a {
-        width: 100%; /* Full width for each link */
-        padding: 10px;
-        text-align: center;
-        background-color: var(--primary-color);
-        box-sizing: border-box;
-    }
+#check:checked ~ .list_container a {
+    width: 100%; /* Full width for each link */
+    padding: 10px;
+    text-align: center;
+    background-color: var(--primary-color);
+    box-sizing: border-box;
+}
 
-    .links a {
-        display: block;
-        text-align: center;
-        padding: 10px;
-        color: var(--text-color);
-        text-decoration: none;
-        
-    }
+.links a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+}
 
-    header label, header h1{
-        font-weight: bolder;
-        font-size: 30px;
-        color: var(--text-color);
-    }
+header label, header h1 {
+    font-weight: bolder;
+    font-size: 30px;
+    color: var(--text-color);
+}
 
+/* HEADER SECTION END */
 
-
-/* HEADER SECTION  END*/
-
-
-/* MEADIA QUERIES */
-@media (min-width: 768px){
-
-    main{
-
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+    main {
         margin-top: 140px;
     }
+
     /* HEADER start */
-
-
-    
-
     header a {
         text-decoration: none;
         font-weight: bolder;
@@ -154,27 +143,19 @@ header nav label{
         font-weight: 600;
     }
 
-    header nav label{
+    header nav label {
         display: none;
     }
 
-    .container{
-        
-            position: relative;
-           
-           
-           
-            height: 0px;
-           
-            
-            
-        
-    }
-    .hamburger{ display: none;
-       
+    .container {
+        position: relative;
+        height: 0px;
     }
 
-    
+    .hamburger {
+        display: none;
+    }
+
     .list_container {
         display: flex;
         flex-direction: row;
@@ -183,25 +164,21 @@ header nav label{
         gap: 20px;
         height: auto;
         background-color: transparent;
-        
-        
     }
 
+    .logo {
+        height: 100px;
+        width: 100px;
+        filter: drop-shadow(2px 2px rgb(184, 179, 179));
+    }
 
-        
-
-        .logo{
-            height: 100px;
-            width: 100px;
-            filter: drop-shadow(2px 2px rgb(184, 179, 179));}
-
-            .links a {
-                display: inline-block;
-                padding: 10px 15px;
-                font-size: 18px;
-                text-align: center;
-                color: black;
-            }
+    .links a {
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 18px;
+        text-align: center;
+        color: black;
+    }
 
     /* id for logo which is linked to home page (Desktop view only) */
     #ham_logo{
@@ -317,15 +294,15 @@ footer a:hover{
 
 /* The container for all footer content */
 /* Background color is a linear gradient */
-.footer{
+/* FOOTER */
+.footer {
     text-align: center;
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 100%;
     height: auto;
-    background: linear-gradient(to right, var(--primary-color),
-    #4e51a6, var(--primary-color));
+    background: linear-gradient(to right, var(--primary-color), #4e51a6, var(--primary-color));
     padding: 10px;
     align-items: center;
     justify-content: space-evenly;
@@ -334,38 +311,69 @@ footer a:hover{
     padding-bottom: 20px;
 }
 
-/* To access copyright and go back button div section */
-.copyright_and_go_back{
+.copyright_and_go_back {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-/* Footer social links container */
-.footer_links{
+.footer_links {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-/* Footer social links */
-.footer_links div{
+.footer_links div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
 }
 
-/* Images for social links */
-.footer_logo{
+.footer_logo {
     height: 20px;
     width: 20px;
 }
 
-/* All 3 sections in the footer */
-.footer div{
+.footer div {
     margin-right: 50px;
 }
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .list_container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .logo {
+        height: 80px;
+        width: 80px;
+    }
+
+    .links a {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .footer {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .footer_links {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .footer_logo {
+        height: 15px;
+        width: 15px;
+    }
+
+    .footer div {
+        margin-right: 20px;
+    }}
     
 
     /* Hero Section*/
